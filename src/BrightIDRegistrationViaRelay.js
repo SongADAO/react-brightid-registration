@@ -593,7 +593,6 @@ function BrightIDRegistrationViaRelay(props) {
                             className="
                             brightid-registration-step__description
                             brightid-registration-step__description--action
-                            brightid-registration-step__description--action-hide-on-complete
                         "
                         >
                             <div className="brightid-registration-step--mobile">
