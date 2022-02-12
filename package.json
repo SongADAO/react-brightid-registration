@@ -1,6 +1,6 @@
 {
   "name": "react-brightid-registration",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React BrightID Registration",
   "main": "build/index.js",
   "files": [
