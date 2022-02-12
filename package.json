@@ -1,6 +1,6 @@
 {
   "name": "react-brightid-registration",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React BrightID Registration",
   "main": "build/index.js",
   "files": [
@@ -9,8 +9,8 @@
     "README.md"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/SongADAO/react-brightid-registration.git"
+    "type": "git",
+    "url": "https://github.com/SongADAO/react-brightid-registration.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
