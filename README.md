@@ -12,7 +12,7 @@
 import { BrightIDRegistrationViaRelay } from "react-brightid-registration";
 ```
 
-### Use
+### Include in Template
 
 ```
 <BrightIDRegistrationViaRelay
@@ -24,7 +24,7 @@ import { BrightIDRegistrationViaRelay } from "react-brightid-registration";
 />
 ```
 
-### Other Default Options
+### Other Overridable Options
 
 ```
 appStoreAndroid = "https://play.google.com/store/apps/details?id=org.brightid"
@@ -44,7 +44,7 @@ verificationUrl = "https://app.brightid.org/node/v5/verifications"
 import { BrightIDRegistration } from "react-brightid-registration";
 ```
 
-### Use
+### Include in Template
 
 ```
 <BrightIDRegistration
@@ -55,7 +55,7 @@ import { BrightIDRegistration } from "react-brightid-registration";
 />
 ```
 
-### Other Default Options
+### Other Overridable Options
 
 ```
 appStoreAndroid = "https://play.google.com/store/apps/details?id=org.brightid",
