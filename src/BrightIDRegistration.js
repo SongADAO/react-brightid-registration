@@ -940,14 +940,14 @@ function BrightIDRegistration(props) {
                                 Link Wallet to IDChain
                             </h2>
                         </div>
-                        <div className="brightid-registration-step__action">
-                            {/* <button
+                        {/* <div className="brightid-registration-step__action">
+                            <button
                                 className="brightid-registration-step__button"
                                 onClick={() => linkAddressToBrightIDIdchain()}
                             >
                                 Link Address
-                            </button> */}
-                        </div>
+                            </button>
+                        </div> */}
                     </div>
                     {qrCodeIdchainUrl && (
                         <div

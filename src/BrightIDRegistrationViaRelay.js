@@ -579,14 +579,14 @@ function BrightIDRegistrationViaRelay(props) {
                                 Link Wallet to BrightID
                             </h2>
                         </div>
-                        <div className="brightid-registration-step__action">
-                            {/* <button
+                        {/* <div className="brightid-registration-step__action">
+                            <button
                                 className="brightid-registration-step__button"
                                 onClick={() => linkAddressToBrightID()}
                             >
                                 Link Address
-                            </button> */}
-                        </div>
+                            </button>
+                        </div> */}
                     </div>
                     {qrCodeUrl && (
                         <div
