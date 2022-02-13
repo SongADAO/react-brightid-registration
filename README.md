@@ -27,13 +27,13 @@ import { BrightIDRegistrationViaRelay } from "react-brightid-registration";
 ### Other Default Options
 
 ```
-appStoreAndroid="https://play.google.com/store/apps/details?id=org.brightid"
-appStoreIos="https://apps.apple.com/us/app/brightid/id1428946820"
-brightIdMeetUrl="https://meet.brightid.org"
-deepLinkPrefix="brightid://link-verification/http:%2f%2fnode.brightid.org"
-registrationChainId="74"
-registrationRpcUrl="https://idchain.one/rpc/"
-verificationUrl="https://app.brightid.org/node/v5/verifications"
+appStoreAndroid = "https://play.google.com/store/apps/details?id = org.brightid"
+appStoreIos = "https://apps.apple.com/us/app/brightid/id1428946820"
+brightIdMeetUrl = "https://meet.brightid.org"
+deepLinkPrefix = "brightid://link-verification/http:%2f%2fnode.brightid.org"
+registrationChainId = "74"
+registrationRpcUrl = "https://idchain.one/rpc/"
+verificationUrl = "https://app.brightid.org/node/v5/verifications"
 ```
 
 ## Use Without Relay
