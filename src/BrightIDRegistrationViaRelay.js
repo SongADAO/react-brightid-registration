@@ -418,14 +418,14 @@ function BrightIDRegistrationViaRelay(props) {
                                 Verify with BrightID
                             </h2>
                         </div>
-                        <div className="brightid-registration-step__action">
-                            {/* <button
+                        {/* <div className="brightid-registration-step__action">
+                            <button
                                 className="brightid-registration-step__button"
                                 onClick={() => verifyWithBrightID()}
                             >
                                 Get Verified
-                            </button> */}
-                        </div>
+                            </button>
+                        </div> */}
                     </div>
                     <div className="brightid-registration-step__description">
                         <p className="brightid-registration-step__description-p">
