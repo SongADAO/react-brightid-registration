@@ -38,7 +38,7 @@ registrationRpcUrl = "https://idchain.one/rpc/"
 verificationUrl = "https://app.brightid.org/node/v5/verifications"
 ```
 
-## Use Without Relay
+## Use Without Relay Server
 
 ### Import
 
