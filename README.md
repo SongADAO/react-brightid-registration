@@ -58,18 +58,18 @@ import { BrightIDRegistration } from "react-brightid-registration";
 ### Other Default Options
 
 ```
-appStoreAndroid="https://play.google.com/store/apps/details?id=org.brightid"
-appStoreIos="https://apps.apple.com/us/app/brightid/id1428946820"
-brightIdMeetUrl="https://meet.brightid.org"
-deepLinkPrefix="brightid://link-verification/http:%2f%2fnode.brightid.org"
-faucetClaimURL="https://idchain.one/begin/api/claim"
-registrationBlockExplorerUrl="https://explorer.idchain.one"
-registrationBlockExplorerTxnPath="/tx/"
-registrationChainId="74"
-registrationChainName="IDChain"
-registrationIconUrl="https://apps.brightid.org/logos/idchain.png"
-registrationRpcUrl="https://idchain.one/rpc/"
-registrationTokenDecimal="18"
-registrationTokenName="Eidi"
-verificationUrl="https://app.brightid.org/node/v5/verifications"
+appStoreAndroid = "https://play.google.com/store/apps/details?id=org.brightid",
+appStoreIos = "https://apps.apple.com/us/app/brightid/id1428946820",
+brightIdMeetUrl = "https://meet.brightid.org",
+deepLinkPrefix = "brightid://link-verification/http:%2f%2fnode.brightid.org",
+faucetClaimURL = "https://idchain.one/begin/api/claim",
+registrationBlockExplorerTxnPath = "/tx/",
+registrationBlockExplorerUrl = "https://explorer.idchain.one",
+registrationChainId = "74",
+registrationChainName = "IDChain",
+registrationIconUrl = "https://apps.brightid.org/logos/idchain.png",
+registrationRpcUrl = "https://idchain.one/rpc/",
+registrationTokenDecimal = "18",
+registrationTokenName = "Eidi",
+verificationUrl = "https://app.brightid.org/node/v5/verifications",
 ```
