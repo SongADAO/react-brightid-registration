@@ -16,7 +16,7 @@ import { BrightIDRegistrationViaRelay } from "react-brightid-registration";
 
 ```
 <BrightIDRegistrationViaRelay
-    context="snapshot"
+    context="__YOUR_BRIGHT_ID_CONTEXT__"
     contractAddr="__YOUR_REGISTRATION_CONTRACT_ADDRESS__"
     mainnetRpcUrl="https://mainnet.infura.io/v3/__YOUR_INFURA_ID__"
     walletConnectInfuraId="__YOUR_INFURA_ID__"
@@ -48,7 +48,7 @@ import { BrightIDRegistration } from "react-brightid-registration";
 
 ```
 <BrightIDRegistration
-    context="snapshot"
+    context="__YOUR_BRIGHT_ID_CONTEXT__"
     contractAddr="__YOUR_REGISTRATION_CONTRACT_ADDRESS__"
     mainnetRpcUrl="https://mainnet.infura.io/v3/__YOUR_INFURA_ID__"
     walletConnectInfuraId="__YOUR_INFURA_ID__"
