@@ -368,7 +368,7 @@ function BrightIDRegistration({
     /* ---------------------------------------------------------------------- */
 
     function verifyWithBrightID() {
-        window.open(props.brightIdMeetUrl, "_blank");
+        window.open(brightIdMeetUrl, "_blank");
     }
 
     function linkAddressToBrightIDIdchain() {
@@ -663,7 +663,7 @@ function BrightIDRegistration({
     }
 
     function hasSwitchedToIDChainNetwork() {
-        return chainId === Number(props.registrationChainId);
+        return chainId === Number(registrationChainId);
     }
 
     function hasObtainedGasTokens() {
@@ -781,7 +781,7 @@ function BrightIDRegistration({
                         <div className="brightid-registration-step__action brightid-registration-step__action--app-store">
                             <div>
                                 <a
-                                    href={props.appStoreAndroid}
+                                    href={appStoreAndroid}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                 >
@@ -794,7 +794,7 @@ function BrightIDRegistration({
                             </div>
                             <div>
                                 <a
-                                    href={props.appStoreIos}
+                                    href={appStoreIos}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                 >
@@ -1192,23 +1192,23 @@ function BrightIDRegistration({
                             </p>
                             <p className="brightid-registration-step__description-p">
                                 <strong>Network Name: </strong>
-                                {props.registrationChainName}
+                                {registrationChainName}
                             </p>
                             <p className="brightid-registration-step__description-p">
                                 <strong>RPC URL: </strong>
-                                {props.registrationRpcUrl}
+                                {registrationRpcUrl}
                             </p>
                             <p className="brightid-registration-step__description-p">
                                 <strong>Chain ID: </strong>
-                                {props.registrationChainId}
+                                {registrationChainId}
                             </p>
                             <p className="brightid-registration-step__description-p">
                                 <strong>Currency Symbol: </strong>
-                                {props.registrationTokenName}
+                                {registrationTokenName}
                             </p>
                             <p className="brightid-registration-step__description-p">
                                 <strong>Block Explorer URL: </strong>
-                                {props.registrationBlockExplorerUrl}
+                                {registrationBlockExplorerUrl}
                             </p>
                         </div>
                     )}
@@ -1253,7 +1253,7 @@ function BrightIDRegistration({
                         <p className="brightid-registration-step__description-p">
                             <strong>Balance: </strong>
                             <span className="brightid-registration-step__description-balance">
-                                {gasBalance} {props.registrationTokenName}
+                                {gasBalance} {registrationTokenName}
                             </span>
                         </p>
                     </div>
@@ -1385,7 +1385,7 @@ function BrightIDRegistration({
                                     <div>
                                         <a
                                             className="brightid-registration-step__response-link"
-                                            href={`${props.registrationBlockExplorerUrl}${props.registrationBlockExplorerTxnPath}${isSponsoredViaContractTxnId}`}
+                                            href={`${registrationBlockExplorerUrl}${registrationBlockExplorerTxnPath}${isSponsoredViaContractTxnId}`}
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -1449,7 +1449,7 @@ function BrightIDRegistration({
                                     <div>
                                         <a
                                             className="brightid-registration-step__response-link"
-                                            href={`${props.registrationBlockExplorerUrl}${props.registrationBlockExplorerTxnPath}${isVerifiedViaContractTxnId}`}
+                                            href={`${registrationBlockExplorerUrl}${registrationBlockExplorerTxnPath}${isVerifiedViaContractTxnId}`}
                                             target="_blank"
                                             rel="noreferrer"
                                         >

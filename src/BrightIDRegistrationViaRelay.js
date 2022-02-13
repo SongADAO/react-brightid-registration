@@ -191,7 +191,7 @@ function BrightIDRegistrationViaRelay({
     /* ---------------------------------------------------------------------- */
 
     function verifyWithBrightID() {
-        window.open(props.brightIdMeetUrl, "_blank");
+        window.open(brightIdMeetUrl, "_blank");
     }
 
     function linkAddressToBrightID() {
@@ -420,7 +420,7 @@ function BrightIDRegistrationViaRelay({
                         <div className="brightid-registration-step__action brightid-registration-step__action--app-store">
                             <div>
                                 <a
-                                    href={props.appStoreAndroid}
+                                    href={appStoreAndroid}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                 >
@@ -433,7 +433,7 @@ function BrightIDRegistrationViaRelay({
                             </div>
                             <div>
                                 <a
-                                    href={props.appStoreIos}
+                                    href={appStoreIos}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                 >
