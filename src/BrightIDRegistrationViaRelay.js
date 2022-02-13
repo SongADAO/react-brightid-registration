@@ -12,7 +12,28 @@ let registration;
 
 let changePollingInterval = 0;
 
-function BrightIDRegistrationViaRelay(props) {
+function BrightIDRegistrationViaRelay({
+    context = "",
+    contractAddr = "",
+    mainnetRpcUrl = "",
+    walletConnectInfuraId = "",
+    relaySponsorURL = "",
+    relayVerificationURL = "",
+    appStoreAndroid = "https://play.google.com/store/apps/details?id=org.brightid",
+    appStoreIos = "https://apps.apple.com/us/app/brightid/id1428946820",
+    brightIdMeetUrl = "https://meet.brightid.org",
+    deepLinkPrefix = "brightid://link-verification/http:%2f%2fnode.brightid.org",
+    faucetClaimURL = "https://idchain.one/begin/api/claim",
+    registrationBlockExplorerTxnPath = "/tx/",
+    registrationBlockExplorerUrl = "https://explorer.idchain.one",
+    registrationChainId = "74",
+    registrationChainName = "IDChain",
+    registrationIconUrl = "https://apps.brightid.org/logos/idchain.png",
+    registrationRpcUrl = "https://idchain.one/rpc/",
+    registrationTokenDecimal = "18",
+    registrationTokenName = "Eidi",
+    verificationUrl = "https://app.brightid.org/node/v5/verifications",
+}) {
     /* State */
     /* ---------------------------------------------------------------------- */
 
@@ -209,7 +230,28 @@ function BrightIDRegistrationViaRelay(props) {
         console.log("initRegistration");
 
         // Initialize registration class.
-        registration = new BrightIDRegistrationModel(props);
+        registration = new BrightIDRegistrationModel(
+            context,
+            contractAddr,
+            mainnetRpcUrl,
+            walletConnectInfuraId,
+            relaySponsorURL,
+            relayVerificationURL,
+            appStoreAndroid,
+            appStoreIos,
+            brightIdMeetUrl,
+            deepLinkPrefix,
+            faucetClaimURL,
+            registrationBlockExplorerTxnPath,
+            registrationBlockExplorerUrl,
+            registrationChainId,
+            registrationChainName,
+            registrationIconUrl,
+            registrationRpcUrl,
+            registrationTokenDecimal,
+            registrationTokenName,
+            verificationUrl
+        );
     }
 
     async function reconnectWallet() {

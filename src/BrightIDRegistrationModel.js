@@ -209,17 +209,23 @@ class BrightIDRegistrationModel {
 
     contractAddr = "";
 
-    deepLinkPrefix = "";
+    mainnetRpcUrl = "";
+
+    walletConnectInfuraId = "";
 
     relaySponsorURL = "";
 
     relayVerificationURL = "";
 
+    appStoreAndroid = "";
+
+    appStoreIos = "";
+
+    brightIdMeetUrl = "";
+
+    deepLinkPrefix = "";
+
     faucetClaimURL = "";
-
-    mainnetRpcUrl = "";
-
-    walletConnectInfuraId = "";
 
     registrationBlockExplorerUrl = "";
 
@@ -239,25 +245,50 @@ class BrightIDRegistrationModel {
 
     verificationUrl = "";
 
-    constructor(props) {
-        this.context = props.context;
-        this.contractAddr = props.contractAddr;
-        this.deepLinkPrefix = props.deepLinkPrefix;
-        this.relaySponsorURL = props.relaySponsorURL;
-        this.relayVerificationURL = props.relayVerificationURL;
-        this.faucetClaimURL = props.faucetClaimURL;
-        this.mainnetRpcUrl = props.mainnetRpcUrl;
-        this.walletConnectInfuraId = props.walletConnectInfuraId;
-        this.registrationBlockExplorerUrl = props.registrationBlockExplorerUrl;
+    constructor(
+        context = "",
+        contractAddr = "",
+        mainnetRpcUrl = "",
+        walletConnectInfuraId = "",
+        relaySponsorURL = "",
+        relayVerificationURL = "",
+        appStoreAndroid = "https://play.google.com/store/apps/details?id=org.brightid",
+        appStoreIos = "https://apps.apple.com/us/app/brightid/id1428946820",
+        brightIdMeetUrl = "https://meet.brightid.org",
+        deepLinkPrefix = "brightid://link-verification/http:%2f%2fnode.brightid.org",
+        faucetClaimURL = "https://idchain.one/begin/api/claim",
+        registrationBlockExplorerTxnPath = "/tx/",
+        registrationBlockExplorerUrl = "https://explorer.idchain.one",
+        registrationChainId = "74",
+        registrationChainName = "IDChain",
+        registrationIconUrl = "https://apps.brightid.org/logos/idchain.png",
+        registrationRpcUrl = "https://idchain.one/rpc/",
+        registrationTokenDecimal = "18",
+        registrationTokenName = "Eidi",
+        verificationUrl = "https://app.brightid.org/node/v5/verifications"
+    ) {
+        this.context = context;
+        this.contractAddr = contractAddr;
+        this.mainnetRpcUrl = mainnetRpcUrl;
+        this.walletConnectInfuraId = walletConnectInfuraId;
+        this.relaySponsorURL = relaySponsorURL;
+        this.relayVerificationURL = relayVerificationURL;
+
+        this.appStoreAndroid = appStoreAndroid;
+        this.appStoreIos = appStoreIos;
+        this.brightIdMeetUrl = brightIdMeetUrl;
+        this.deepLinkPrefix = deepLinkPrefix;
+        this.faucetClaimURL = faucetClaimURL;
         this.registrationBlockExplorerTxnPath =
-            props.registrationBlockExplorerTxnPath;
-        this.registrationChainId = props.registrationChainId;
-        this.registrationChainName = props.registrationChainName;
-        this.registrationIconUrl = props.registrationIconUrl;
-        this.registrationRpcUrl = props.registrationRpcUrl;
-        this.registrationTokenDecimal = props.registrationTokenDecimal;
-        this.registrationTokenName = props.registrationTokenName;
-        this.verificationUrl = props.verificationUrl;
+            registrationBlockExplorerTxnPath;
+        this.registrationBlockExplorerUrl = registrationBlockExplorerUrl;
+        this.registrationChainId = registrationChainId;
+        this.registrationChainName = registrationChainName;
+        this.registrationIconUrl = registrationIconUrl;
+        this.registrationRpcUrl = registrationRpcUrl;
+        this.registrationTokenDecimal = registrationTokenDecimal;
+        this.registrationTokenName = registrationTokenName;
+        this.verificationUrl = verificationUrl;
     }
 
     resetWalletData() {
