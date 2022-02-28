@@ -68,6 +68,16 @@
     background: var(--stepButtonBackgroundColorHover);
 }
 
+.brightid-registration-step__button + .brightid-registration-step__button {
+    margin-top: 2px;
+}
+
+.brightid-registration-step__button--small {
+    padding: 6px 10px;
+    min-width: 0;
+    margin: 2px 0;
+}
+
 /* Step */
 /* -------------------------------------------------------------------------- */
 
@@ -183,6 +193,18 @@
     font-size: 12px;
 }
 
+.brightid-registration-step__important {
+    color: var(--statusCompleteIconColor);
+}
+
+.brightid-registration-step__description-reset {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+
 .brightid-registration-step--mobile {
     display: none;
 }
@@ -255,6 +277,7 @@
     font-size: var(--stepResponseFontSize);
     margin-top: var(--paddingSize);
     padding: var(--paddingSize);
+    word-break: break-all;
 }
 
 .brightid-registration-step__response-loading-icon {
