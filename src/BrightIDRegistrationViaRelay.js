@@ -317,7 +317,7 @@ function BrightIDRegistrationViaRelay({
             if (response.ok === false) {
                 const body = await response.json();
 
-                throw new Error(body.errorMessage);
+                throw new Error(body.error.message);
             }
 
             await initIsVerifiedViaContract();
