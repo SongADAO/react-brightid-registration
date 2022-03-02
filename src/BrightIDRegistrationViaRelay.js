@@ -51,6 +51,11 @@ function BrightIDRegistrationViaRelay({
 
     const [stepConnectWalletError, setStepConnectWalletError] = useState("");
 
+    const [
+        stepVerifyViaContractProcessing,
+        setStepVerifyViaContractProcessing,
+    ] = useState("");
+
     const [stepVerifyViaContractStatus, setStepVerifyViaContractStatus] =
         useState("");
 
@@ -308,6 +313,8 @@ function BrightIDRegistrationViaRelay({
 
     async function verifyViaContract() {
         try {
+            setStepVerifyViaContractProcessing(true);
+
             setStepVerifyViaContractStatus(
                 "We're registering your BrightID account with Snapshot.  This can take up to a minute. Please wait."
             );
@@ -324,6 +331,7 @@ function BrightIDRegistrationViaRelay({
 
             setStepVerifyViaContractError("");
             setStepVerifyViaContractStatus("");
+            setStepVerifyViaContractProcessing(false);
         } catch (e) {
             // console.error(e);
             // console.log(e);
@@ -332,6 +340,7 @@ function BrightIDRegistrationViaRelay({
 
             setStepVerifyViaContractError(e.message);
             setStepVerifyViaContractStatus("");
+            setStepVerifyViaContractProcessing(false);
         }
     }
 
@@ -718,6 +727,11 @@ function BrightIDRegistrationViaRelay({
                                     <button
                                         className="brightid-registration-step__button"
                                         onClick={() => verifyViaContract()}
+                                        disabled={
+                                            stepVerifyViaContractProcessing
+                                                ? true
+                                                : null
+                                        }
                                     >
                                         Register
                                     </button>
